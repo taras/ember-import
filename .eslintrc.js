@@ -1,4 +1,6 @@
-module.exports = {
+let rules = require('eslint-plugin-node').configs.recommended.rules; // eslint-disable-line no-undef
+
+module.exports = {// eslint-disable-line no-undef
   root: true,
   parserOptions: {
     ecmaVersion: 2017,
@@ -43,7 +45,7 @@ module.exports = {
         node: true
       },
       plugins: ['node'],
-      rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
+      rules: Object.assign({}, rules, {
         // add your custom rules and overrides for node files here
       })
     }
