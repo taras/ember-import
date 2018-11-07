@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/taras/ember-import.svg?branch=master)](https://travis-ci.com/taras/ember-import)
+
 ember-import
 ==============================================================================
 
