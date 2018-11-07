@@ -1,13 +1,13 @@
 {
   "name": "ember-import",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "Import arbitrary modules into scope templates",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "git@github.com:taras/ember-import.git",
   "license": "MIT",
-  "author": "",
+  "author": "Taras Mankovski <taras@frontside.io>",
   "directories": {
     "doc": "doc",
     "test": "tests"

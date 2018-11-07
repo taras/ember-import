@@ -1,7 +1,10 @@
+[![Build Status](https://travis-ci.com/taras/ember-import.svg?branch=master)](https://travis-ci.com/taras/ember-import)
+
 ember-import
 ==============================================================================
 
-[Short description of the addon.]
+`(import)` helper allows to import arbitrary modules into the template of an
+Ember application. 
 
 Installation
 ------------------------------------------------------------------------------
@@ -10,19 +13,30 @@ Installation
 ember install ember-import
 ```
 
-
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+You can import any module using `{{import 'full-module-path/goes/here'}}`. This
+will automatically import the default export. 
 
+If you would like to change the name of the export that you want to import then 
+you can specify the name of the module after `?`. 
+
+For example, `{{import 'full-module-path/goes/here?otherExport'}}` will import
+`otherExport` from `full-module-path/goes/here`.
+
+Limitations
+------------------------------------------------------------------------------
+
+- Does not support relative imports
+- Does not allow async import
 
 Contributing
 ------------------------------------------------------------------------------
 
 ### Installation
 
-* `git clone <repository-url>`
+* `git clone git@github.com:taras/ember-import.git`
 * `cd ember-import`
 * `npm install`
 
